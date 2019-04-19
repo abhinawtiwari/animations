@@ -114,6 +114,14 @@ export class AppComponent {
     this.wildState == 'normal' ? this.wildState = 'highlighted' : this.wildState = 'normal';
   }
 
+  animationsStarted($event) {
+    console.log($event);
+  }
+
+  animationsEnded($event) {
+    console.log($event);
+  }
+
   onShrink() {
     this.wildState = 'shrunken';
   }
